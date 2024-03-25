@@ -18,6 +18,11 @@
 
 ### new tomb4 features
 
+## [2.3.0](https://github.com/ultronubis/TOMB4/tree/v2.3.0) (March. 25 2024)
+
+- Added mirror mode
+- Removed discord
+- Lara picks up items from a little farther away (within one "square")
 
 ## [2.2.1](https://github.com/Trxyebeep/TOMB4/tree/V2.2.1) (May. 6 2023)
 

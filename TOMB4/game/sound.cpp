@@ -6,6 +6,9 @@
 #include "camera.h"
 #include "gameflow.h"
 #include "control.h"
+#include "../global/types.h"
+
+extern tomb4_options tomb4;
 
 SAMPLE_INFO* sample_infos;
 SoundSlot LaSlot[32];
@@ -167,6 +170,9 @@ long SoundEffect(long sfx, PHD_3DPOS* pos, long flags)
 	if (pos)
 	{
 		dx = pos->x_pos - camera.pos.x;
+		if (tomb4.mirrorMode) {
+			dx = -dx;
+		}
 		dy = pos->y_pos - camera.pos.y;
 		dz = pos->z_pos - camera.pos.z;
 
